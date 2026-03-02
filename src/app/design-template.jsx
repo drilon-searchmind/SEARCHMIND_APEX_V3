@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 export default function DesignTemplate() {
 	return (
-		<div className="min-h-screen bg-slate-50 text-text-default font-sans">
+		<div className="min-h-screen bg-zinc-50 text-text-default font-sans">
 			<Head>
 				<title>Design System – SearchMind Apex</title>
 				<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,6 +15,7 @@ export default function DesignTemplate() {
 				<section className="mb-12">
 					<h2 className="text-2xl font-semibold mb-4">Brand Colors</h2>
 					<div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+						{/* Original Brand Colors */}
 						<div className="flex flex-col items-center">
 							<div className="w-16 h-16 rounded-lg bg-[var(--brand)]" />
 							<span className="mt-2 text-sm">Brand Blue</span>
@@ -39,6 +40,39 @@ export default function DesignTemplate() {
 							<div className="w-16 h-16 rounded-lg bg-[var(--brand-info)]" />
 							<span className="mt-2 text-sm">Info Purple</span>
 						</div>
+						{/* New Brand Colors */}
+						<div className="flex flex-col items-center">
+							<div className="w-16 h-16 rounded-lg bg-[var(--lime)] border" />
+							<span className="mt-2 text-sm">Lime</span>
+						</div>
+						<div className="flex flex-col items-center">
+							<div className="w-16 h-16 rounded-lg bg-[var(--green)]" />
+							<span className="mt-2 text-sm">Green</span>
+						</div>
+						<div className="flex flex-col items-center">
+							<div className="w-16 h-16 rounded-lg bg-[var(--light-green)]" />
+							<span className="mt-2 text-sm">Light Green</span>
+						</div>
+						<div className="flex flex-col items-center">
+							<div className="w-16 h-16 rounded-lg bg-[var(--white)] border" />
+							<span className="mt-2 text-sm">White</span>
+						</div>
+						<div className="flex flex-col items-center">
+							<div className="w-16 h-16 rounded-lg bg-[var(--light-beige)] border" />
+							<span className="mt-2 text-sm">Light Beige</span>
+						</div>
+						<div className="flex flex-col items-center">
+							<div className="w-16 h-16 rounded-lg bg-[var(--dark-beige)]" />
+							<span className="mt-2 text-sm">Dark Beige</span>
+						</div>
+						<div className="flex flex-col items-center">
+							<div className="w-16 h-16 rounded-lg bg-[var(--beige)]" />
+							<span className="mt-2 text-sm">Beige</span>
+						</div>
+						<div className="flex flex-col items-center">
+							<div className="w-16 h-16 rounded-lg bg-[var(--black)]" />
+							<span className="mt-2 text-sm">Black</span>
+						</div>
 					</div>
 				</section>
 				<section className="mb-12">
@@ -50,14 +84,6 @@ export default function DesignTemplate() {
 						<h4 className="text-xl font-medium">Heading 4 – xl</h4>
 						<p className="text-base">Body text – base</p>
 						<p className="text-text-muted">Muted text</p>
-					</div>
-				</section>
-				<section>
-					<h2 className="text-2xl font-semibold mb-4">Sample Card</h2>
-					<div className="bg-card rounded-xl p-6 shadow-lg max-w-sm">
-						<h3 className="text-xl font-semibold mb-2">Card Title</h3>
-						<p className="text-text-muted mb-4">This is a sample card to demonstrate background, border, and text colors.</p>
-						<button className="bg-brand-accent text-white px-4 py-2 rounded-lg font-medium hover:bg-green-600 transition">Primary Action</button>
 					</div>
 				</section>
 			</div>
