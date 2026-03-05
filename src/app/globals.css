@@ -6,43 +6,39 @@
 @tailwind utilities;
 
 
-:root {
-	--background: #181A20;
-	--foreground: #FFFFFF;
-	--brand: #4262FF;
-	--brand-dark: #23272F;
-	--brand-light: #F5F6FA;
-	--brand-accent: #12B76A;
-	--brand-warning: #F04438;
-	--brand-info: #8B5CF6;
-	--card: #181A20;
-	--border: #23272F;
-	--text-default: #FFFFFF;
-	--text-muted: #A3AED0;
 
-	--lime: #c6ed62;
-	--green: #213b34;
-	--light-green: #6a8f4d;
-	--white: #ffffff;
-	--light-beige: #fefbf2;
-	--dark-beige: #d6cdb6;
-	--beige: #eae3d1;
-	--black: #000000;
+:root {
+  --background: #fefbf2;
+  --foreground: #213b34;
+  --brand-primary: #213b34;
+  --brand-secondary: #6a8f4d;
+  --brand-accent: #c6ed62;
+  --brand-light: #fefbf2;
+  --brand-dark: #d6cdb6;
+  --brand-beige: #eae3d1;
+  --brand-black: #000000;
+  --brand-white: #ffffff;
+  --card: #ffffff;
+  --border: #d6cdb6;
+  --text-default: #213b34;
+  --text-muted: #6a8f4d;
+
+  --brand-warning: #78350f;
+  --brand-warning-light: #c2410c;
 }
+
 
 @theme inline {
-	--color-background: var(--background);
-	--color-foreground: var(--foreground);
-	--font-sans: 'Manrope', ui-sans-serif, system-ui, sans-serif;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: 'Manrope', ui-sans-serif, system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-	:root {
-		--background: #181A20;
-		--foreground: #FFFFFF;
-	}
-}
+
+/* No dark mode override: always light theme */
 
 body {
-	font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif;
+  font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif;
+  background: var(--background);
+  color: var(--foreground);
 }

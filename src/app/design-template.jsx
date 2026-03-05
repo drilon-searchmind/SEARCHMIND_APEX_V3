@@ -1,4 +1,9 @@
+
 import Head from 'next/head';
+import Input from '../components/form/Input';
+import Textarea from '../components/form/Textarea';
+import Button from '../components/form/Button';
+import Form from '../components/form/Form';
 
 export default function DesignTemplate() {
 	return (
@@ -84,6 +89,29 @@ export default function DesignTemplate() {
 						<h4 className="text-xl font-medium">Heading 4 – xl</h4>
 						<p className="text-base">Body text – base</p>
 						<p className="text-text-muted">Muted text</p>
+					</div>
+				</section>
+
+				{/* Form Components Showcase */}
+				<section className="mb-12">
+					<h2 className="text-2xl font-semibold mb-4">Form Components</h2>
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+						<div>
+							<h3 className="text-lg font-semibold mb-2">Input</h3>
+							<Input label="Sample Input" placeholder="Type here..." />
+							<h3 className="text-lg font-semibold mb-2 mt-6">Textarea</h3>
+							<Textarea label="Sample Textarea" placeholder="Type your message..." />
+							<h3 className="text-lg font-semibold mb-2 mt-6">Button Variants</h3>
+							<div className="flex flex-wrap gap-4">
+								<Button>Primary</Button>
+								<Button variant="secondary">Secondary</Button>
+								<Button variant="danger">Danger</Button>
+							</div>
+						</div>
+						<div>
+							<h3 className="text-lg font-semibold mb-2">Full Form Example</h3>
+							<Form />
+						</div>
 					</div>
 				</section>
 			</div>
