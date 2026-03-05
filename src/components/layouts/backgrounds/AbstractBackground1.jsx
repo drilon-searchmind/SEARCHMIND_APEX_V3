@@ -20,7 +20,7 @@ const AbstractBackground1 = ({ children, backgroundUrl = '/abstracts/16359095_v9
                     // background: "linear-gradient(0deg, rgba(33,59,52,0.95) 0%, rgba(33,59,52,0.6) 100%)"
                 }}
             />
-            <div className="relative z-20 w-full h-full flex items-center justify-center mt-[10vh]">
+            <div className="relative z-20 w-full h-full flex items-center justify-center">
                 {children}
             </div>
         </section>

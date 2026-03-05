@@ -14,9 +14,14 @@ import Input from '@/components/form/Input'
 const LoginPage = () => {
     return (
         <section id='LoginPage'>
-            <div className="min-h-screen grid grid-cols-1 md:grid-cols-20">
+            <div className="min-h-screen grid grid-cols-1 md:grid-cols-20 relative">
                 <span className='col-span-11'>
                     <AbstractBackground1 backgroundUrl='/abstracts/16359095_v904-nunny-012.jpg'>
+                        <span id='whiteSpan1' className='bg-zinc-50'></span>
+                        <span id='whiteSpan2' className='bg-zinc-50'></span>
+                        <span id='whiteSpan3' className='bg-zinc-50'></span>
+                        <span id='whiteSpan4' className='bg-zinc-50'></span>
+
                         <section className='flex flex-col gap-10 px-20'>
                             <div className='h-full flex flex-col gap-0'>
                                 <Heading1 className="text-white mb-4">Get Started<br /> on Apex</Heading1>
