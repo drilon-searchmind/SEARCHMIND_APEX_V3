@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap');
 @import "tailwindcss";
 
 @tailwind base;
@@ -8,37 +9,73 @@
 
 
 :root {
-  --background: #fefbf2;
-  --foreground: #213b34;
-  --brand-primary: #213b34;
-  --brand-secondary: #6a8f4d;
-  --brand-accent: #c6ed62;
-  --brand-light: #fefbf2;
-  --brand-dark: #d6cdb6;
-  --brand-beige: #eae3d1;
-  --brand-black: #000000;
-  --brand-white: #ffffff;
-  --card: #ffffff;
-  --border: #d6cdb6;
-  --text-default: #213b34;
-  --text-muted: #6a8f4d;
+	--background: #fefbf2;
+	--foreground: #213b34;
+	--brand-primary: #213b34;
+	--brand-secondary: #6a8f4d;
+	--brand-accent: #c6ed62;
+	--brand-light: #fefbf2;
+	--brand-dark: #d6cdb6;
+	--brand-beige: #eae3d1;
+	--brand-black: #000000;
+	--brand-white: #ffffff;
+	--card: #ffffff;
+	--border: #d6cdb6;
+	--text-default: #213b34;
+	--text-muted: #6a8f4d;
 
-  --brand-warning: #78350f;
-  --brand-warning-light: #c2410c;
+	--brand-warning: #78350f;
+	--brand-warning-light: #c2410c;
 }
 
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: 'Manrope', ui-sans-serif, system-ui, sans-serif;
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--font-sans: 'Urbanist', ui-sans-serif, system-ui, sans-serif;
 }
 
 
 /* No dark mode override: always light theme */
 
 body {
-  font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif;
-  background: var(--background);
-  color: var(--foreground);
+	font-family: 'Urbanist', ui-sans-serif, system-ui, sans-serif;
+	color: var(--foreground);
+}
+
+.glassmorphism1 {
+	/* From https://css.glass */
+	/* background: linear-gradient(0deg, var(--brand-primary)50%, var(--brand-secondary)120%); */
+	/* background: linear-gradient(180deg, var(--brand-primary) 0%, rgba(106,143,77,0.2) 100%, rgba(106,143,77,0.7) 70%); */
+	background: linear-gradient(120deg, rgba(33, 59, 52, 0.8) 0%, rgba(106, 143, 77, 0.5) 60%, rgba(198, 237, 98, 0.3) 100%);
+	/* backdrop-filter: blur(16.2px);
+	opacity: 0.8;
+	filter: blur(100px);
+	overflow: hidden;
+}
+
+.glassmorphism2 {
+	/* From https://css.glass */
+	background: rgba(255, 255, 255, 0.47);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(16.2px);
+}
+
+.glassmorphism3 {
+	background: linear-gradient(120deg, rgba(85, 146, 130, 0.85) 0%, rgba(33, 59, 52, 0.7) 100%);
+	opacity: 0.85;
+	/* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+}
+
+.glassmorphism4 {
+	/* From https://css.glass */
+	background: rgba(255, 255, 255, 0.47);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(16.2px);
+}
+
+.easing-class-1 {
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
 }
