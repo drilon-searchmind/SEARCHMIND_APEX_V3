@@ -15,34 +15,35 @@ const LoginPage = () => {
     return (
         <section id='LoginPage'>
             <div className="min-h-screen grid grid-cols-1 md:grid-cols-20 relative">
-                <span className='col-span-11'>
+                {/* Left side: background and cards */}
+                <span className='col-span-1 md:col-span-11'>
                     <AbstractBackground1 backgroundUrl='/abstracts/16359095_v904-nunny-012.jpg'>
                         <span id='whiteSpan1' className='bg-zinc-50'></span>
                         <span id='whiteSpan2' className='bg-zinc-50'></span>
                         <span id='whiteSpan3' className='bg-zinc-50'></span>
                         <span id='whiteSpan4' className='bg-zinc-50'></span>
 
-                        <section className='flex flex-col gap-10 px-20'>
-                            <div className='h-full flex flex-col gap-0'>
-                                <Heading1 className="text-white mb-4">Get Started<br /> on Apex</Heading1>
-                                <ParagraphDefault>Please log in to your account to continue.</ParagraphDefault>
+                        <section className='flex flex-col gap-10 px-4 pb-10 md:pb-0 md:px-20 w-full'>
+                            <div className='h-full flex flex-col gap-0 mt-5 md:mt-0'>
+                                <Heading1 className="text-white mb-4 text-4xl md:text-6xl">Get Started<br /> on Apex</Heading1>
+                                <ParagraphDefault textSize="base" marginTop="mt-2">Please log in to your account to continue.</ParagraphDefault>
                             </div>
-                            <div className='flex gap-4 mt-10'>
+                            <div className='flex flex-col md:flex-row gap-4 mt-6 md:mt-10 w-full items-stretch'>
                                 <DefaultCard>
                                     <RoundedNumber>1</RoundedNumber>
-                                    <Heading3>Hello</Heading3>
+                                    <Heading3 className="text-base md:text-2xl">Hello</Heading3>
                                     <ParagraphDefault textColor="black" textSize='base'>Please log in to your account to continue.</ParagraphDefault>
                                 </DefaultCard>
 
                                 <DefaultCard cardType="beige">
                                     <RoundedNumber>2</RoundedNumber>
-                                    <Heading3>Hello 2</Heading3>
+                                    <Heading3 className="text-base md:text-2xl">Hello 2</Heading3>
                                     <ParagraphDefault textColor="black" textSize='base'>Please log in to your account to continue.</ParagraphDefault>
                                 </DefaultCard>
 
                                 <DefaultCard cardType="beige">
                                     <RoundedNumber>3</RoundedNumber>
-                                    <Heading3>Hello 3</Heading3>
+                                    <Heading3 className="text-base md:text-2xl">Hello 3</Heading3>
                                     <ParagraphDefault textColor="black" textSize='base'>Please log in to your account to continue.</ParagraphDefault>
                                 </DefaultCard>
                             </div>
@@ -50,10 +51,11 @@ const LoginPage = () => {
                     </AbstractBackground1>
                 </span>
 
-                <div className="flex bg-zinc-50 items-center justify-center px-40 col-span-9">
-                    <div className='w-full'>
-                        <Heading2 className="text-center mb-4">Login Here</Heading2>
-                        <ParagraphDefault textPosition="center" textColor="black" textSize='base'>Please enter your credentials to login.</ParagraphDefault>
+                {/* Right side: login form */}
+                <div className="flex bg-zinc-50 items-center justify-center px-4 md:px-40 col-span-1 md:col-span-9">
+                    <div className='w-full max-w-md mx-auto'>
+                        <Heading2 className="md:mt-0 mt-10 text-center mb-4 text-xl md:text-3xl">Login Here</Heading2>
+                        <ParagraphDefault textPosition="center" textColor="black" textSize='base' marginTop="mt-2">Please enter your credentials to login.</ParagraphDefault>
 
                         <span className='flex items-center justify-center mt-10'>
                             <Button variant="white">
@@ -88,7 +90,7 @@ const LoginPage = () => {
                             </div>
                         </div>
 
-                        <form className='mt-8 flex flex-col gap-2'>
+                        <form className='mt-8 flex flex-col gap-2 pb-10 md:pb-0'>
                             <Input label="Email" type="email" placeholder="Enter your email" />
                             <Input label="Password" type="password" placeholder="Enter your password" />
                             <span className='mt-5'>
